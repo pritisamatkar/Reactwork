@@ -2,7 +2,7 @@ const resList =  [
     {
       "info": {
         "id": "10576",
-        "name": "Pizza Hut",
+        "name": "priti Pizza Hut",
         "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
         "locality": "Koramangala",
         "areaName": "Koramangala",
@@ -79,7 +79,7 @@ const resList =  [
     {
       "info": {
         "id": "393840",
-        "name": "Chinese Wok",
+        "name": "xyz Chinese Wok",
         "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
         "locality": "Chikka Lakshmaiah Layout",
         "areaName": "Adugodi",
@@ -159,7 +159,7 @@ const resList =  [
     {
       "info": {
         "id": "581809",
-        "name": "UBQ by Barbeque Nation",
+        "name": "BBQ by Barbeque Nation",
         "cloudinaryImageId": "muaktnk5xb3zop4bvj6l",
         "locality": "7th Block",
         "areaName": "Koramangala",
