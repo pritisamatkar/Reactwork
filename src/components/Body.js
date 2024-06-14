@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
+//custom hook
+
+
 const Body =()=>{
     const [listOfRestraurants, setListOfRestraurants]= useState([]);
    // console.log(resList);
