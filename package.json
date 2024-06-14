@@ -2,10 +2,9 @@
   "name": "y",
   "version": "1.0.0",
   "description": "this is react work",
- 
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "priti",
@@ -16,9 +15,10 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 Chrome version",
     "last 2 Firefox version"
   ]
