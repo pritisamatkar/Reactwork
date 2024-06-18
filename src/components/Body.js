@@ -31,7 +31,7 @@ const Body =()=>{
                     <input type="text" className="border border-solid border-black" value={searchText} onChange={(e)=>{
                         setSearchText(e.target.value)
                     }}/>
-                    <button className="px-2 bg-green-200 mx-2" onClick={ () =>{
+                    <button className="px-2 bg-green-100 mx-2" onClick={ () =>{
                       const filteredRestraurant =  listOfRestraurants.filter( (res) => 
                       res.info.name.toLowerCase().includes(searchText.toLowerCase())
                       );
@@ -39,7 +39,7 @@ const Body =()=>{
                     }}>Search</button>
                 </div>
            <div className="p-2 m-2">
-           <button className="px-2 bg-green-200 mx-2" onClick={()=>{
+           <button className="px-2 bg-green-100 mx-2" onClick={()=>{
                 const filterList = listOfRestraurants.filter( (res)=> res.info.avgRating > 4.5)
                 setFilteredRestraurant(filterList);
              } }>Top Rated Restraurants</button>
