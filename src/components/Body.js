@@ -28,7 +28,7 @@ const Body =()=>{
         <div className="body">
              <div className="flex">
                 <div className="p-2 m-2">
-                    <input type="text" className="border border-solid border-black" value={searchText} onChange={(e)=>{
+                    <input type="text" data-testid="searchInput"  className="border border-solid border-black" value={searchText} onChange={(e)=>{
                         setSearchText(e.target.value)
                     }}/>
                     <button className="px-2 bg-green-100 mx-2" onClick={ () =>{
@@ -40,7 +40,7 @@ const Body =()=>{
                 </div>
            <div className="p-2 m-2">
            <button className="px-2 bg-green-100 mx-2" onClick={()=>{
-                const filterList = listOfRestraurants.filter( (res)=> res.info.avgRating > 4.5)
+                const filterList = listOfRestraurants.filter( (res)=> res.info.avgRating > 4.2)
                 setFilteredRestraurant(filterList);
              } }>Top Rated Restraurants</button>
            </div>

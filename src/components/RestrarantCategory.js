@@ -4,7 +4,7 @@ import ItemList from './ItemList'
 const RestrarantCategory = ({data,showItems, setShowIndex}) => {
    // console.log(data)
    const handleClick = () =>{
-    setShowIndex();
+    setShowIndex( (prevIndex)=> ( prevIndex === showItems ? null : showItems));
     
    }
    

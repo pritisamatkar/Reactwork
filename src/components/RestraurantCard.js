@@ -7,10 +7,11 @@ const restStyle = {
 
 const RestraurantCard =(props) =>{
    const  {resData} = props;
+   
    const {name, cuisines, avgRating, costForTwo,cloudinaryImageId} = resData?.info;
   
     return  (
-    <div className="p-4 m-4 w-[250px] rounded-lg" style={{ backgroundColor: "#F0F0F0"}}>
+    <div data-testid="resCard" className="p-4 m-4 w-[250px] rounded-lg" style={{ backgroundColor: "#F0F0F0"}}>
     <img src={CDN_URL + cloudinaryImageId} className="res-logo rounded-lg" alt="res-logo" />
         <h3 className="font-bold py-2 text-lg">{name}</h3>
         <h4>{cuisines?.join(", ")}</h4>

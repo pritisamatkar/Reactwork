@@ -11,7 +11,7 @@ const {resId} = useParams();
 //custom hook
 const resInfo  = useRestraurantMenu(resId);
 //lifting teh state up
-const [showIndex,setShowIndex] = useState(0);
+const [showIndex,setShowIndex] = useState(null);
 
 
  
@@ -36,8 +36,10 @@ const categories = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.
           <RestrarantCategory
            key ={category?.card?.card?.title} 
            data ={category?.card?.card} 
-           showItems = { index === showIndex ? true : false}
-           setShowIndex = { ()=> setShowIndex(index)}
+           showItems = { index === showIndex}
+           setShowIndex = {()=>
+            setShowIndex( index === showIndex ? null : index)
+           }
            /> )
         }
     </div>
